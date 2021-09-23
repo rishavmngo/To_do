@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;500;700;800&display=swap");
+
+h1 {
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  color: #1f2f44;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    120deg,
+    rgb(65, 226, 145),
+    rgb(78, 134, 255)
+  );
+}
+
+.container {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input {
+  border: 1px solid black;
+  border-right: none;
+  padding: 2px;
+}
+.todo-add {
+  border: 1px solid black;
+  border-left: none;
+  width: 30px;
+  color: black;
+  background: white;
+}
+form {
+  display: flex;
+}
+form > * {
+  height: 30px;
+}
+.todo-add:hover {
+  background: rgb(43, 42, 43);
+  color: white;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.item-list {
+  background-color: white;
+  margin-top: 10px;
+  width: 90%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  background: rgb(53, 53, 53);
+}
+
+.item-value {
+  flex: 1;
+  color: white;
+}
+.item {
+  height: 30px;
+}
+.action {
+  width: 30px;
+  border: none;
+}
+.item-delete {
+  background: none;
+  color: red;
+}
+.item-complete {
+  background: none;
+  color: yellowgreen;
+}
+
+.action:hover {
+  background: black;
+  border-radius: 2px;
+  color: white;
+}
+
+i {
+  pointer-events: none;
+}
+#completed {
+  background: rgb(65, 226, 145);
+}
+#completed > p {
+  text-decoration: line-through;
+}
+#completed > .item-complete {
+  display: none;
+}
